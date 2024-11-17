@@ -1,54 +1,27 @@
-// script.js
-
 const dizeler = {
     a: [
-        "Sevda bahçesinde hayal-i pervane,", "Gecenin karanlığında yıldızlar yanar,",
-        "Sessiz gecelerde bir hüzün var,", "Bir bahar sabahı, gönlümde ferah,",
-        "Aşkın ateşinde yanar gönlüm,", "Yıldızlar altında bir garip sevdâ,",
-        "Hayalin peşinde sürüklenir aklım,", "Gönül deryasında mest-i muhabbet,",
-        "İlham perisiyle düşler kurarım,", "Aşkın sarmalında kaybolmuş ruhum,",
-        "Geceler boyu süren bir ızdırap,", "Aşk sarhoşu gönlümde hep sen,",
-        "Mehtaplı gecelerde hayalinle,", "Yıldızlar şahit, ay yol gösterir,",
-        "Sevda bahçesinde dolaşır hayal,", "Rüyalarda buluşuruz seninle,",
-        "Sükut içinde bir derviş gönlüm,", "Mevsimler geçer, aşkın baki,",
-        "Leyla-mecnun misali aşkı yaşarım,", "Gönül bahçesinde efsun-i hal,",
-        "Gözlerimde mecnun, gönlümde asuman,", "Ferhat'ın aşkı gibi dağları deler,"
+        "Mecalis-i hüda-i bezm-i hüda,", "Efkâr-ı mahrutî şeb-i hande-nigar,", 
+        "Mahlukat-ı füsun-ı alemin mihriban,", "Beyan-ı dergâh-ı aşk ü sevdâ,", 
+        "Huzur-u âlemde perişan hayal,", "Şehrayin-i mazi, mehtabın izinde,", 
+        "Hicran-ı iklimde hüzünlü akşamlar,", "Aşkın sefinesi, zamanın deryası,"
     ],
     b: [
-        "Gözlerimde mestane, gönlümde hicran.", "Hayal-i düşlerde gönüller kanar.",
-        "Gözlerimde yaşlar, kalbimde nar.", "Rüzgarın serinliği, içimde bir ah.",
-        "Hasretin narıyla dolar ömrüm.", "Mehtabın ışığında ruhum hep ağlâ.",
-        "Bir nebze huzur bulmaz yüreğim.", "Her bir bakışınla artar minnet.",
-        "Sevda masalında seni ararım.", "Her adımda seni bulurmuşum.",
-        "Gönlümde saklıdır aşkın harap.", "Her nefes, her an isminle perişan.",
-        "Aşkın denizinde dalgalanır gönlüm.", "Gönlümde hasretin yürek deler.",
-        "Gözlerimde mestane, gönlümde melal.", "Her gecede bir masal, bir düşte.",
-        "Her demde seni anar, seni bulur.", "Her nefes, her an seninle sanki.",
-        "Sükut-u hayal ile yıkılır kalbim,", "Gözlerimde fer, gönlümde elem,"
+        "Tesirat-ı muhalefet-i ziya-i ma’şuk,", "Hayal-i münteşir-i mevsim-i gam,", 
+        "Müsavver-i ziya-yı mehtap firkat,", "Şeb-i yeldâda melal-i meserret,", 
+        "Sensiz gecelerde nehirler susar,", "Gönlümde yankılanır eski bir türkü,", 
+        "Hayalin ufkunda yıldızlar sönük,", "Şarkılar sessiz, sokaklar matem,"
     ],
     c: [
-        "Sükunet içinde bir garip derman,", "Rüzgarın fısıldadığı umutlar var,",
-        "Yıldızların altında hayaller ar,", "Kuşların şarkısı, içimdeki feryat,",
-        "Geceler boyu süren bu dert,", "Gönül hanesinde hasretle yanan,",
-        "Her dert, her keder seninle başlar,", "Öyle bir aşk ki dillere destân,",
-        "Her gece mehtapta yankılanır sesin,", "Sonsuz düşlerde bir umman,",
-        "Bir melâl, bir hicran öyküsü,", "Rüzgarla savrulan yaprak gibi,",
-        "Sensiz her gece karanlık ve zindan,", "Aşkınla yanarım, her an sana,",
-        "Gecelerin sessizliğinde feryad,", "Gönlümde saklıdır bu aşk öyküsü,",
-        "Aşkınla coşar, her an yanar,", "Gönlümde saklıdır bu aşkın izleri,",
-        "Gönül sarayında hep bir hasret,", "Şeb-i yelda da seni anar,"
+        "Hafız-ı mecalis-i şeb-i meşakat,", "Mütedavil-i tasavvur-i zülal-i aşk,", 
+        "Tefekkür-i leyali-i şeb-i mihrap,", "Beyan-ı musahhar-ı firkat-i elem,", 
+        "Rüzgarın fısıltısı, geceyi boğar,", "Şehirde yankılanan, suskun bir ezgi,", 
+        "Baharın getirdiği o eski hatıra,", "Gözlerim ufukta, hayalin uzakta,"
     ],
     d: [
-        "Aşkın denizinde kaybolur firkat.", "Karanlıkta ışık olur anılar.",
-        "Sevgiliye hasretle yanan bir yar.", "Sevgiliye kavuşmak, en büyük murat.",
-        "Sevdanın izidir gönülde mert.", "Bir hicran hikâyesi, yürekle bakan.",
-        "Sensiz geçen zaman gönlümü taşlar.", "Her nefesimde sen, her an.",
-        "Gönül şarkılarımda gizli hevesin.", "Seninle var olur, seninle can.",
-        "Her bir dörtlükte sensin gülsüm.", "Her anım seninle, her an âşık.",
-        "Gönlümde seninle yaşar her an.", "Dizelerde saklıdır bu aşka.",
-        "Kalbimde hep sana, hep sana âd.", "Sensiz her anım bir kayboluş, bir süs.",
-        "Sensiz bir dünya, gönlümde hicran.", "Sensiz geçen her gün birer ezgi.",
-        "Her an seni anar bu gönül,", "Sana kavuşmak tek bir murad."
+        "Halvet-i mekân-ı firkat-i sergüzeşt,", "Muhalefet-i temaşa-yı hicran,", 
+        "Mukadderat-ı evsaf-ı gubar-ı hayal,", "Beyan-ı müntehab-ı aşk-ı mecnûn,", 
+        "Sensiz geçen bir asır, gönlümde firar,", "Aşkın bıraktığı derin bir izdirap,", 
+        "Kelimeler yorgun, gönlüm hep seninle,", "Her dizede saklı, yaralı bir hikaye."
     ]
 };
 
